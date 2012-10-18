@@ -1,6 +1,7 @@
 #include    <iostream>
 #include	<string.h>
 
+
 using namespace std;
 
 int	findLevenshteinDistance(const	std::string	&firstString,	const	string	&secondString)
