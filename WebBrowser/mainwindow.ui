@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>756</width>
+    <height>353</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MyWebBrowser</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:none;
+ background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:1 rgba(185, 185, 185, 255));
+ border-bottom:1px solid rgb(79,101,125);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="spacing">
+        <number>5</number>
+       </property>
+       <property name="leftMargin">
+        <number>5</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>5</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QPushButton" name="pushButton">
+         <property name="minimumSize">
+          <size>
+           <width>33</width>
+           <height>23</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>33</width>
+           <height>23</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+ 	border: 1px solid;
+	border-top-color: rgb(67, 67, 67);
+	border-right-color: rgb(67, 67, 67);
+	border-bottom-color: rgb(67, 67, 67);
+	border-left-color: rgb(67, 67, 67);
+	border-radius: 10px;
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0.363636, x2:0, y2:0.369, 			stop:1 rgba(0, 170, 127, 255));
+ 	font: bold;
+ }
+QPushButton:pressed {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:1 rgba(0, 193, 	142, 255));
+ }</string>
+         </property>
+         <property name="text">
+          <string>&lt;&lt;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_2">
+         <property name="minimumSize">
+          <size>
+           <width>33</width>
+           <height>23</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>33</width>
+           <height>23</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+ 	border: 1px solid;
+	border-top-color: rgb(67, 67, 67);
+	border-right-color: rgb(67, 67, 67);
+	border-bottom-color: rgb(67, 67, 67);
+	border-left-color: rgb(67, 67, 67);
+	border-radius: 10px;
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0.363636, x2:0, y2:0.369, 			stop:1 rgba(0, 170, 127, 255));
+ 	font: bold;
+ }
+QPushButton:pressed {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:1 rgba(0, 193, 	142, 255));
+ }</string>
+         </property>
+         <property name="text">
+          <string>&gt;&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_3">
+         <property name="minimumSize">
+          <size>
+           <width>53</width>
+           <height>23</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>53</width>
+           <height>23</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+ border: 1px solid;
+	border-top-color: rgb(67, 67, 67);
+	border-right-color: rgb(67, 67, 67);
+	border-bottom-color: rgb(67, 67, 67);
+	border-left-color: rgb(67, 67, 67);
+	 border-radius: 3px;
+	background-color: qlineargradient(spread:pad, x1:0.977, y1:0.0170455, x2:0.0224545, 			y2:0.039, stop:0.440678 rgba(0, 104, 232, 255));
+ 	color:#FFFFFF;
+ }
+QPushButton:pressed {   
+	background-color: qconicalgradient(cx:0.5, cy:0.5, angle:0, stop:0 rgba(65, 127, 255, 				255));
+ }</string>
+         </property>
+         <property name="text">
+          <string>Reload</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_4">
+         <property name="minimumSize">
+          <size>
+           <width>53</width>
+           <height>23</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>53</width>
+           <height>23</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+ border: 1px solid;
+	border-top-color: rgb(67, 67, 67);
+	border-right-color: rgb(67, 67, 67);
+	border-bottom-color: rgb(67, 67, 67);
+	border-left-color: rgb(67, 67, 67);
+ 	border-radius: 3px;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:1 rgba(198, 0, 	0, 255));
+ 	color:#FFFFFF;
+ }
+QPushButton:pressed {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:1 rgba(255, 0, 	0, 255));
+ }</string>
+         </property>
+         <property name="text">
+          <string>Stop</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>23</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>23</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+ background-color: rgb(255, 255, 255);
+ border: 1px solid #707070;
+ border-radius: 3px;
+ }</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWebView" name="webView">
+      <property name="styleSheet">
+       <string notr="true">QProgressBar {
+ border-bottom:1px solid rgb(79,101,125);
+ border-top:1px solid rgb(79,101,125);
+ text-align:center;
+ background-color: rgba(191, 255, 191, 255);
+ }
+
+QProgressBar::chunk {
+ background-color: qlineargradient(spread:pad, x1:0.488, y1:0,
+ x2:0.497, y2:1, stop:0 #85B3E8, stop:1 #3067a5);
+ width: 9px;
+ margin: 1px;
+ margin-right:0px;
+ padding:1px;
+ border:1px solid gray;
+ }</string>
+      </property>
+      <property name="url">
+       <url>
+        <string>about:blank</string>
+       </url>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QProgressBar" name="progressBar">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>15</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>15</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="value">
+       <number>0</number>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>756</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QWebView</class>
+   <extends>QWidget</extends>
+   <header>QtWebKit/QWebView</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>webView</receiver>
+   <slot>back()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>25</x>
+     <y>49</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>41</x>
+     <y>125</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>webView</receiver>
+   <slot>forward()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>70</x>
+     <y>48</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>74</x>
+     <y>105</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>webView</receiver>
+   <slot>reload()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>112</x>
+     <y>42</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>117</x>
+     <y>96</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>webView</receiver>
+   <slot>stop()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>157</x>
+     <y>55</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>166</x>
+     <y>96</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>webView</sender>
+   <signal>loadProgress(int)</signal>
+   <receiver>progressBar</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>285</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>86</x>
+     <y>340</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
