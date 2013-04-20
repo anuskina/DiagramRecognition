@@ -19,18 +19,21 @@ class Skeletonization : public QMainWindow
 public:
     explicit Skeletonization(QWidget *parent = 0);
     ~Skeletonization();
-    QImage  image;
-    void    paintEvent(QPaintEvent *);
-    void    firstSubIteration(Pixel *pixel);
-    void    secondSubiteration(Pixel *pixel);
-    void    createListOfEigntConnectrdNeighbor(Pixel *pixel);
-    void    getSkeleton();
-    void    deleteMarkedPixel();
-    QList<Pixel *>  eightConnectedNeighbor;
-    QList<Pixel *>  listOfMarkedPixel;
+    void getSkeleton();
+private:
+    void paintEvent(QPaintEvent *);
+    void    iteration(Pixel *pixel, int firstNeighbor, int secondNeighbor);
+    void secondSubiteration(Pixel *pixel);
+    void createListOfEigntConnectrdNeighbor(Pixel *pixel);
+    void deleteMarkedPixel();
     int numberOfBlackNeighbor();
     int connectivityNumber();
-private:
+    QRgb colorOfPixel(Pixel *pixel);
+    QList<Pixel *>  eightConnectedNeighbor;
+    QList<Pixel *>  listOfMarkedPixel;
+    QImage  image;
+    QRgb colorOfBackGround;
+    QRgb colorOfObject;
     Ui::skeletonization *ui;
 };
 
